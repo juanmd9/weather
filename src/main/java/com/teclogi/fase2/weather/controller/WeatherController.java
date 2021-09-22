@@ -13,6 +13,11 @@ public class WeatherController {
     @Autowired
     WeatherService ws;
 
+    /**
+     * This method allows to filter the weather of Bogotá from a POST request.
+     * @param filter The filter that want to make.
+     * @return Status and the weather in case of success.
+     */
     @PostMapping
     public ResponseEntity<?> findByCity(@RequestBody Filter filter) {
         try {

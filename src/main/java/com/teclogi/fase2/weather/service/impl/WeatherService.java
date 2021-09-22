@@ -11,6 +11,12 @@ import java.net.URL;
 
 @Service
 public class WeatherService implements com.teclogi.fase2.weather.service.WeatherService {
+
+    /**
+     * This method invoke an extern service to get the weather using the filter.
+     * @param filter The filter that will be sent to the extern service.
+     * @return The information of the weather.
+     */
     @Override
     public String getWeatherByFilter(Filter filter) {
         String USER_AGENT = "Mozilla/5.0";
